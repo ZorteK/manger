@@ -1,0 +1,32 @@
+
+entity Recipe {
+	Name String
+}
+
+entity Ingredient {
+	Name String
+}
+
+entity Stock {
+	quantity Long
+}
+
+relationship ManyToMany {
+	Recipe{ingredients(name)} to Ingredient{recipes(name)}
+}
+
+relationship OneToOne {
+	Stock{ingredient(name)} to Ingredient
+}
+
+// Set pagination options
+paginate Recipe, Ingredient, Stock with infinite-scroll
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

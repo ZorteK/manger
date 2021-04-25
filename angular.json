@@ -95,6 +95,7 @@
   },
   "defaultProject": "manger",
   "cli": {
+    "analytics": false,
     "packageManager": "npm"
   }
 }

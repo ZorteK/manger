@@ -1,0 +1,29 @@
+{
+  "name": "Stock",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "ingredient",
+      "otherEntityRelationshipName": "stock",
+      "relationshipName": "ingredient",
+      "otherEntityField": "name",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "stock",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210424205904"
+}

@@ -41,6 +41,8 @@
     "jwtSecretKey": "ZGIzZjYxNDZiODg1MDcxMjAxNmE2YTNiNzE4ZDM4MDIwNDU0ODM1YzJjODgxOTU1NTFiZjRjOTAyZWNiZDI4YjNiZTRlYTYxNWM1YzYyYmY0ZGNkYmZkYjNkMDlkZWY1MTQ4N2YzNzg4YzI3NTc3ZTE4NzAwMjg4MzUxZDk5ZmQ=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["fr", "en"]
+    "languages": ["fr", "en"],
+    "entities": ["Recipe", "Ingredient", "Stock"],
+    "lastLiquibaseTimestamp": 1619297944000
   }
 }
